@@ -3,6 +3,7 @@ let Circle = class {
     constructor() {
         this.ang = 0;
     }
+    
     drawLine(length, rot) {
         push();
         rotate(rot);
@@ -34,6 +35,7 @@ let Time = class {
         } else {
             this.valOneAdd = lerp(this.valOneAdd, 0, .25)
         }
+        
         text(valOne, xOne, height - 35 - this.valOneAdd);
 
         if (valTwo == this.oldValTwo) {
@@ -41,6 +43,7 @@ let Time = class {
         } else {
             this.valTwoAdd = lerp(this.valTwoAdd, 0, .25)
         }
+        
         text(valTwo, xOne + 25, height - 35 - this.valTwoAdd);
 
         this.oldValOne = valOne;
